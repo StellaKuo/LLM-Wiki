@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>米奇是誰？從 1928 到公共領域</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Noto+Serif+TC:wght@700;900&display=swap">
+<style>
+:root{--bg:#fbf7f0;--fg:#211d1a;--mut:#6d655c;--acc:#c0392b;--card:#fff;--line:#e6dfd3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#181514;--fg:#f2ede6;--mut:#a79f94;--acc:#ff7a66;--card:#231f1d;--line:#38322e}}
+:root[data-theme="dark"]{--bg:#181514;--fg:#f2ede6;--mut:#a79f94;--acc:#ff7a66;--card:#231f1d;--line:#38322e}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font:18px/1.65 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;display:flex;flex-direction:column}
+main{flex:1;position:relative;overflow:hidden}
+section{position:absolute;inset:0;padding:5vh 7vw;overflow-y:auto;display:none}
+section.on{display:block}
+h1{font-size:clamp(30px,6vw,56px);line-height:1.2;margin:.2em 0}
+h2{font-size:clamp(24px,4vw,36px);margin:0 0 .6em;color:var(--acc)}
+.mut{color:var(--mut)}.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.c b{color:var(--acc)}.tag{font-size:13px;color:var(--mut);margin-top:1.2em}
+.tl{border-left:3px solid var(--acc);margin:0 0 1em 6px;padding-left:18px}.tl p{margin:.5em 0}.tl b{color:var(--acc)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:10px 7vw;border-top:1px solid var(--line)}
+button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 18px;font-size:16px;cursor:pointer}
+/* 1928 老電影院主題 */
+html{background:#0a0807}
+body{--bg:#14100e;--fg:#f3e9d2;--mut:#c2b295;--acc:#f2b632;--card:#f6ecd6;--line:#b88b4a}
+.marquee{position:relative;background:#7a1410;color:#ffd24a;text-align:center;font:700 13px/1 "Rye","Noto Serif TC",serif;letter-spacing:.26em;padding:9px 8px 20px}
+.marquee::after{content:"";position:absolute;left:0;right:0;bottom:5px;height:9px;background:radial-gradient(circle,#ffd24a 0 3px,transparent 4px) 0 50%/22px 9px repeat-x;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:.35}}
+main{background:radial-gradient(ellipse at 50% -10%,rgba(255,206,110,.3),transparent 62%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .95 0 0 0 0 .85 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),#14100e}
+main::before,main::after{content:"";position:absolute;top:0;bottom:0;width:26px;z-index:3;pointer-events:none;background:repeating-linear-gradient(180deg,#0a0807 0 12px,#f3e9d2 12px 26px,#0a0807 26px 38px) center/10px 100% no-repeat,#0a0807}
+main::before{left:0}main::after{right:0}
+section{z-index:1;padding:4vh max(7vw,46px) 70px}
+section.on{animation:up .45s ease both}
+@keyframes up{from{opacity:0;transform:translateY(16px)}}
+.sea{position:absolute;left:26px;right:26px;bottom:0;height:46px;z-index:0;pointer-events:none;overflow:hidden;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20'%3E%3Cpath d='M0 10Q20 0 40 10T80 10V20H0Z' fill='%234a8fb0' fill-opacity='.5'/%3E%3C/svg%3E") repeat-x bottom/80px 20px;animation:wave 3s linear infinite}
+@keyframes wave{to{background-position-x:80px}}
+.boat{position:absolute;bottom:10px;left:-60px;font-style:normal;font-size:30px;animation:sail 26s linear infinite,bob 2s ease-in-out infinite}
+@keyframes sail{to{left:100%}}@keyframes bob{50%{transform:translateY(-4px) rotate(-2deg)}}
+h1{font-family:"Noto Serif TC","Songti TC",serif;font-weight:900;color:#ffd24a;text-shadow:3px 3px 0 #7a1410,0 0 24px rgba(255,200,80,.45);animation:glow 3s ease-in-out infinite alternate}
+@keyframes glow{to{text-shadow:3px 3px 0 #7a1410,0 0 40px rgba(255,200,80,.8)}}
+h2{font-family:"Noto Serif TC","Songti TC",serif;font-weight:900;text-shadow:2px 2px 0 #7a1410}
+#s2 h2::before{content:"🚢 "}#s3 h2::before{content:"🎷 "}#s4 h2::before{content:"⚖️ "}#s5 h2::before{content:"🔓 "}#s6 h2::before{content:"🎟️ "}#s7 h2::before{content:"🏁 "}
+.c{color:#2a211b;background:var(--card);border:2px dashed #b88b4a;border-radius:10px;box-shadow:5px 5px 0 rgba(0,0,0,.5);transition:transform .2s}
+.c:hover{transform:rotate(-1.2deg) scale(1.02)}
+.c b{color:#b3261e}
+.on .c{animation:pop .5s cubic-bezier(.2,1.4,.4,1) both}
+.on .c:nth-child(2){animation-delay:.08s}.on .c:nth-child(3){animation-delay:.16s}.on .c:nth-child(4){animation-delay:.24s}
+@keyframes pop{from{opacity:0;transform:scale(.85) rotate(-3deg)}}
+.tl{border-left:4px dotted #f2b632}.tl p{position:relative}
+.tl p::before{content:"";position:absolute;left:-30px;top:.6em;width:14px;height:14px;border-radius:50%;background:#d6402c;border:3px solid #f2b632}
+.on .tl p{animation:slide .45s ease both}.on .tl p:nth-child(2){animation-delay:.1s}.on .tl p:nth-child(3){animation-delay:.2s}.on .tl p:nth-child(4){animation-delay:.3s}.on .tl p:nth-child(5){animation-delay:.4s}
+@keyframes slide{from{opacity:0;transform:translateX(-18px)}}
+#s7::after{content:"— THE END —";display:block;text-align:center;font:400 28px/1.4 "Rye",serif;letter-spacing:.2em;color:#ffd24a;margin-top:.8em}
+#bar{height:4px;width:14%;background:linear-gradient(90deg,#d6402c,#f2b632);transition:width .4s}
+nav{background:#0a0807;border-top:2px solid #7a1410}
+button{background:#d6402c;color:#fff7e0;border:2px solid #f2b632;border-radius:999px;font-weight:700}
+button:active{transform:scale(.95)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="marquee">NOW SHOWING · 1928-11-18 · COLONY THEATER</div>
+<main>
+<div class="sea"><i class="boat">🚢</i></div>
+<section id="s1" data-wiki="W1">
+<p class="mut">教學簡報｜建立在自製 LLM Wiki 之上</p>
+<h1>米奇是誰？<br>從 1928 到公共領域</h1>
+<p>一隻卡通老鼠，如何從銀幕明星，變成版權法裡最常被討論的角色？</p>
+<p class="mut">本簡報只用文字講解，不繪製角色（米奇為 Disney 的著作與商標）。</p>
+<p class="mut">→ 鍵或下方按鈕換頁</p>
+<p class="tag">依據 wiki：W1</p>
+</section>
+
+<section id="s2" data-wiki="W1 W2">
+<h2>1. 他怎麼誕生的？</h2>
+<div class="tl">
+<p><b>1928</b>　Walt Disney 失去幸運兔奧斯華的掌控，與 Ub Iwerks 著手創造新角色。</p>
+<p><b>製作</b>　先做 Plane Crazy 與 The Gallopin’ Gaucho，但都找不到發行商。</p>
+<p><b>轉向</b>　有聲電影興起，改做 Steamboat Willie，並搶先上映。</p>
+<p><b>1928-11-18</b>　Steamboat Willie 在紐約 Colony 戲院首映，米奇正式亮相。</p>
+</div>
+<div class="grid">
+<div class="c"><b>造型</b><br>身體以圓形組成，方便動畫製作。</div>
+<div class="c"><b>名字</b><br>相傳原名 Mortimer，妻子 Lillian 覺得太做作而建議改名（來源註明為傳說）。</div>
+</div>
+<p class="tag">依據 wiki：W1、W2（來源 S1、S2、S3、S4）</p>
+</section>
+
+<section id="s3" data-wiki="W2 W3">
+<h2>2. 為什麼紅？後來怎麼變？</h2>
+<div class="grid">
+<div class="c"><b>最早之一的同步音效卡通</b><br>Steamboat Willie 是最早採用完整同步音效的卡通之一（注意：是「之一」，不是「第一」），音效由 Walt 親自配。</div>
+<div class="c"><b>平凡人的魅力</b><br>角色受卓別林影響，觀眾能認同他的喜怒哀樂。</div>
+<div class="c"><b>造型演變</b><br>早期沒有手套（1929 年才戴上），也沒有紅短褲；1935 年首部彩色短片；1939 年首次大改造型。</div>
+<div class="c"><b>人氣起伏</b><br>全盛期在 1930 年代，1940 年代銀幕人氣被唐老鴨與高飛超越。累計約 120 部影院卡通（官方文字與清單數字略有出入）。</div>
+</div>
+<p class="mut">歷史註記：學者指出，當時卡通角色（含米奇）的造型與歧視性的黑臉滑稽秀刻板形象有相似處。1978 年他成為首位獲好萊塢星光大道星星的卡通角色。</p>
+<p class="tag">依據 wiki：W2、W3（來源 S1、S2、S3、S4）</p>
+</section>
+
+<section id="s4" data-wiki="W4">
+<h2>3. 先搞懂：著作權 vs 商標</h2>
+<div class="grid">
+<div class="c"><b>著作權</b><br>保護「創作作品」，必須在有限期間後到期，之後任何人都能分享、改編。</div>
+<div class="c"><b>商標</b><br>保護「品牌識別」，只要持續使用就不會自動到期；一般而言只在可能讓消費者誤認來源時才禁止他人使用。</div>
+</div>
+<h2 style="margin-top:1em">為什麼等到 2024 年？</h2>
+<div class="tl">
+<p>原本：Steamboat Willie 預定 <b>1984</b> 年到期（56 年期）。</p>
+<p>1978 年修法：延到 <b>2004</b>。</p>
+<p>1998 年再延長：延到 <b>2024</b>。</p>
+<p>規則：1930 年前後的作品保護 95 年，第 95 年結束後的 1 月 1 日進入公共領域。</p>
+</div>
+<p class="tag">依據 wiki：W4（來源 S2、S3）</p>
+</section>
+
+<section id="s5" data-wiki="W5 W6">
+<h2>4. 進入公共領域後，能做什麼？</h2>
+<div class="grid">
+<div class="c"><b>可以</b><br>使用 Steamboat Willie 與 1928 年無聲版 Plane Crazy 裡的米奇與米妮：分享、改編、混搭。尖細嗓音這類通用特徵不受版權保護；自選配色屬獨立創作（單一顏色的界線仍有爭論）。</div>
+<div class="c"><b>不可以</b><br>使用後來仍受保護的版本（例如《幻想曲》的米奇）；也不能讓人誤以為是 Disney 出品，或把米奇當品牌標誌用在商品上。</div>
+</div>
+<div class="c" style="margin-top:14px"><b>Disney 的態度</b><br>表示會繼續保護較新版本的米奇，並防止未授權使用造成消費者混淆。建議做法：清楚標示你是創作者，並註明非 Disney 出品。</div>
+<p class="mut">補充：1998 年那項延長法案被戲稱「米老鼠保護法」，但專家認為這稱呼可能誇大 Disney 的角色，推動者其實是更廣泛的遊說。</p>
+<p class="tag">依據 wiki：W5、W6（來源 S2、S4）</p>
+</section>
+
+<section id="s6" data-wiki="W7 W8">
+<h2>5. 之後呢？逐年開放</h2>
+<div class="tl">
+<p><b>2024</b>　Steamboat Willie、無聲版 Plane Crazy</p>
+<p><b>2025</b>　有聲版 Plane Crazy 與 The Gallopin’ Gaucho；1929 年作品依規則推算同年到期</p>
+<p><b>2026</b>　1930 年的 9 部米奇短片、第一週的連載漫畫，以及 Pluto 的前身 Rover。累計 24 部 1928–1930 年米奇卡通</p>
+<p><b>2027</b>　1931 年作品（依 95 年規則推算）</p>
+<p><b>2028</b>　高飛的初登場　<b>2030</b>　唐老鴨</p>
+</div>
+<p>重點：每次進來的都只是「當年的原版」，後來的版本仍受保護。</p>
+<p class="mut">限制：以上僅適用美國法，他國年限不同；本簡報不是法律意見。</p>
+<p class="tag">依據 wiki：W7、W8（來源 S1、S2、S3、S5）</p>
+</section>
+
+<section id="s7" data-wiki="W3 W5 W8">
+<h2>6. 一頁帶走</h2>
+<div class="c">米奇是<b>最早的同步音效卡通明星之一</b>；他的「早期版本」已進入美國公共領域，<b>後期版本與商標仍受 Disney 保護</b>。<br>公共領域是「逐年、逐版本」開放，不是一夕全部自由。</div>
+<p class="tag">資料來源（皆已 ingest 進 Wiki，皆讀全文）：<br>S1 D23〈Mickey Mouse〉· S2 Duke 法學院 Jenkins〈Mickey, Disney, and the Public Domain〉· S3 Duke〈Public Domain Day 2026〉· S4 華盛頓郵報（Stars and Stripes 轉載）· S5 Cartoon Brew〈Public Domain Day 2026〉</p>
+</section>
+</main>
+<div id="bar"></div><nav><button id="p">← 上一頁</button><span id="n" class="mut"></span><button id="x">下一頁 →</button></nav>
+<script>
+var S=[].slice.call(document.querySelectorAll("section")),i=0;
+function show(k){i=Math.max(0,Math.min(S.length-1,k));S.forEach(function(s,j){s.classList.toggle("on",j===i)});document.getElementById("n").textContent=(i+1)+" / "+S.length;document.getElementById("bar").style.width=((i+1)/S.length*100)+"%";try{history.replaceState(null,"","#s"+(i+1))}catch(e){}}
+function fromHash(){var m=/^#s(\d+)$/.exec(location.hash);show(m?+m[1]-1:0)}
+document.getElementById("p").onclick=function(){show(i-1)};document.getElementById("x").onclick=function(){show(i+1)};
+document.addEventListener("keydown",function(e){if(e.key==="ArrowRight"||e.key===" ")show(i+1);if(e.key==="ArrowLeft")show(i-1)});
+window.addEventListener("hashchange",fromHash);fromHash();
+</script>
+</body>
+</html>
